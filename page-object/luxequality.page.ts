@@ -11,7 +11,7 @@ export class LuxeQualityPage {
 
 
     async goto() {
-        await this.page.goto("/")
+        await this.page.goto("https://luxequality.com")
     }
 
 }

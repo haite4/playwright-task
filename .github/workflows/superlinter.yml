@@ -3,7 +3,6 @@ name: Luxe Quality Tests
 on: push
 
 
-
 jobs:
   test:
   
