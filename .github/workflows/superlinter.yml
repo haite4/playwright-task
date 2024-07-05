@@ -1,9 +1,12 @@
-name: Super-Linter
+name: Luxe Quality Tests
 
 on: push
 
+
+
 jobs:
-  super-lint:
+  test:
+  
     name: Lint code base
     runs-on: ubuntu-latest
     steps:
