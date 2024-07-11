@@ -19,7 +19,7 @@ This repository includes automated tests written using Playwright and TypeScript
     ```
 2. Navigate to the project directory:
     ```sh 
-    cd Luxe-Quality-Task1
+    cd .
     ```
 3. Install dependencies:
     ```sh
