@@ -23,6 +23,7 @@ This repository includes automated tests written using Playwright and TypeScript
     ```
 3. Install dependencies:
     ```sh
+    npm install playwright --save-dev
     npm install 
     ``` 
 
