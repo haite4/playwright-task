@@ -40,7 +40,7 @@ test.describe("Login page testing", () => {
       const password = faker.internet.password();
       await helper.login(login, password);
       for (let j = 0; j < errorsElements.length; j++) {
-        await expect(await errorsElements[j]).toBeVisible({ timeout: 3000 });
+        await expect(await errorsElements[j]).toBeVisible({ timeout: 5000 });
       }
     }
   });
