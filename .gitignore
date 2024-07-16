@@ -1,5 +1,7 @@
-playwright-task\allure-report
-playwright-task\allure-results
+playwright-task/allure-report
+playwright-task/allure-resuts
+
+allure-results/
 
 node_modules/
 /test-results/
