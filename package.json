@@ -4,8 +4,8 @@
   "main": "index.js",
   "scripts": {
     "test": "playwright test",
-    "test:login": "playwright test  login.spec.ts",
-    "test:mainpage": "playwright test mainPage.spec.ts",
+    "test:login:run": "playwright test  login.spec.ts",
+    "test:mainpage:run": "playwright test mainPage.spec.ts",
     "test:chromium": "playwright test --project=chromium",
     "test:firefox": "playwright test --project=firefox",
     "test:webkit": "playwright test --project=webkit",

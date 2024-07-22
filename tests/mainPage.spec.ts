@@ -2,6 +2,7 @@ import { expect } from "@playwright/test";
 import { test } from "../fixtures/fixtures";
 
 test.describe("Main page testing", () => {
+
   test.beforeEach(async ({ mainPage }) => {
     await mainPage.openBaseUrl();
   });
@@ -40,4 +41,5 @@ test.describe("Main page testing", () => {
       await expect(await headerElements[i]).toBeVisible();
     }
   });
+  
 });

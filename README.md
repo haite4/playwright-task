@@ -2,7 +2,7 @@
 
 ## Summary
 
-This repository includes automated tests written using Playwright and TypeScript. The tests verify the functionality of elements on the main page as well as on the login page.
+This repository includes 5 automated test cases written using the Playwright framework and TypeScript. The tests verify the functionality of elements on the main page as well as on the login page of the website [Redmine](https://www.redmine.org/). These tests ensure that critical elements and features of the website are working as expected.
 
 ## Requirements
 
@@ -11,7 +11,7 @@ This repository includes automated tests written using Playwright and TypeScript
 - Playwright
 - TypeScript
 
-## Step to install 
+## Steps to Install
 
 1. Clone the repository:
     ```sh
@@ -19,7 +19,7 @@ This repository includes automated tests written using Playwright and TypeScript
     ```
 2. Navigate to the project directory:
     ```sh 
-    cd .
+    cd playwright-task
     ```
 3. Install dependencies:
     ```sh
@@ -28,25 +28,43 @@ This repository includes automated tests written using Playwright and TypeScript
     npm install 
     ``` 
 
-
 ## Steps to Launch
 
-1.  ```sh
-    npx playwright test
-    ```
-2. To run tests with a specific browser (Chromium, Firefox, WebKit), use:
+1. **Run all Playwright tests**:
     ```sh
-    npx playwright test --project=chromium
-    npx playwright test --project=firefox
-    npx playwright test --project=webkit
+    npm run test
     ```
+2. **Run tests with a specific browser**:
+    - For Chromium:
+        ```sh
+        npm run test:chromium
+        ```
+    - For Firefox:
+        ```sh
+        npm run test:firefox
+        ```
+    - For WebKit:
+        ```sh
+        npm run test:webkit
+        ```
+
+3. **Run specific test cases**:
+    - For Login Page tests:
+        ```sh
+        npm run test:login:run
+        ```
+    - For Main Page tests:
+        ```sh
+        npm run test:mainpage:run
+        ```
+
 ## Steps to Create the Report
 
 1. Generate the Allure report:
     ```sh
-    npx allure generate ./allure-results --clean -o ./allure-report
+    npm run allure:generate
     ```
 2. Serve the Allure report:
     ```sh
-    npx allure open ./allure-report
+    npm run allure:open
     ```

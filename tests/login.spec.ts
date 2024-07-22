@@ -4,6 +4,7 @@ import valid_creds from "../data/valid_creds.json";
 import { faker } from "@faker-js/faker";
 
 test.describe("Login page testing", () => {
+  
   test.beforeEach(async ({ loginPage }) => {
     await loginPage.openUrl("login");
   });
@@ -19,6 +20,7 @@ test.describe("Login page testing", () => {
       await expect(await webpageElements[i]).toBeVisible();
     }
   });
+
   test("User can log in with valid credentials", async ({
     mainPage,
     helper,
@@ -44,4 +46,5 @@ test.describe("Login page testing", () => {
       }
     }
   });
+
 });
