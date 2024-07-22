@@ -4,9 +4,10 @@ import valid_creds from "../data/valid_creds.json";
 import { faker } from "@faker-js/faker";
 
 test.describe("Login page testing", () => {
-  
+
   test.beforeEach(async ({ loginPage }) => {
     await loginPage.openUrl("login");
+
   });
 
   test("Verify all needs elements are visible", async ({ loginPage }) => {
@@ -46,5 +47,5 @@ test.describe("Login page testing", () => {
       }
     }
   });
-
+  
 });

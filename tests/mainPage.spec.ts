@@ -5,6 +5,7 @@ test.describe("Main page testing", () => {
 
   test.beforeEach(async ({ mainPage }) => {
     await mainPage.openBaseUrl();
+
   });
 
   test("Verify top-menu elements are visible", async ({ mainPage }) => {
